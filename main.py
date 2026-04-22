@@ -23,7 +23,6 @@ async def on_message(message):
       
     if message.content.lower().startswith('i suggest') and message.channel.id == 1064671109158535230:
         response = await message.channel.send('I will think about it. Thank you for your suggestion!')
-        print("Someone suggested!!")
         thumbsUp = '\N{THUMBS UP SIGN}'
         thumbsDown = '\N{THUMBS DOWN SIGN}'
         await message.add_reaction(thumbsUp)
