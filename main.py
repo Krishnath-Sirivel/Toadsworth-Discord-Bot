@@ -5,7 +5,8 @@ import os
 
 TOKEN = os.getenv("TOKEN")
 
-intents = discord.Intents(messages=True, guilds=True)
+intents = discord.Intents.default()
+intents.message_content = True  # needed to read messages
 intents.reactions = True
 
 client = discord.Client(intents=intents)
